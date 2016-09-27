@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul id="list">
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li style="color: green">Element 3</li>
+    <li style="color: green">Element 4</li>
+    <li>Element 5</li>
+    <li style="color: green">Element 6</li>
+    <li style="color: green">Element 7</li>
+    <li style="color: green">Element 8</li>
+    <li>Element 9</li>
+    <li style="color: green">Element 10</li>
+</ul>
+<script>
+var t = document.getElementsByTagName("li");
+for(var i=0;i<t.length;i++){
+	if(t[i].style.color == 'green'){
+		var spaN = document.createElement('span');
+		
+		spaN.innerHTML = t[i].innerHTML;
+		t[i].innerHTML = '';
+		t[i].appendChild(spaN);
+	}else{
+		var paragraph = document.createElement('p');
+		paragraph.innerHTML = t[i].innerHTML;
+		t[i].innerHTML = '';
+		t[i].appendChild(paragraph);
+	}
+}
+</script>
+</body>
+</html>
