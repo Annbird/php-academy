@@ -1,0 +1,89 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	background:black url(img/bj.png);
+	/*width: 1600px;*/
+	height: 2025px;
+}
+.bg{
+	background: white;
+	width: 980px;
+	/*height: 1951px;*/
+	margin:0 auto;
+	margin-top: 46px;
+}
+header{
+	height: 94px;
+}
+.logo{
+	width: 241px;
+	height: 37px;
+}
+.header li{
+display: inline-block;	
+}
+.header a{
+	color: #cf0000;
+	font-family: Arial;
+
+}
+ .search {
+    width: 250px; /* Ширина поля с кнопкой */
+    border: 1px solid #000; /* Параметры рамки */
+    height: 28px; /* Минимальная высота */
+   }
+   .input {
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none;/*  Убираем рамку в Chrome и Safari*/ 
+    width: 212px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+   }
+   .sub {
+    width: 32px; /* Ширина кнопки */
+    height: 27px; /* Высота кнопки */
+    border: none; /* Убираем рамку */
+    background: url(img/search.png) no-repeat 50% 50%; /* Параметры фона */
+   }
+.navigation{
+	height: 45px;
+	width: 940px;
+	background-color: #0f1010;
+}
+.navigation li{
+display: inline-block;
+}
+/*.navigation li :hover{
+	background-color: #e4e4e4;
+}*/
+.play a{
+color: #e5e5e5;
+font-family: Bebas;
+}
+@font-face{
+	 font-family: Bebas; /* Имя шрифта */
+    src: url(7fonts.ru_BEBAS___.TTF);
+}
+.right a{
+	color: #202021;
+}
+.right a:hover{
+	color: red;
+}
+article a{
+	color:red;
+}
+.part_3 a{
+	color: red;
+}
+.part_1, .part_2, .part_3{
+	font-family: Arial;
+}
+.right{
+	font-family: Arial;
+}
